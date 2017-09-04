@@ -1,0 +1,34 @@
+#container {
+  text-align: center;
+  margin: 100px auto;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #94b9af;
+  color: #ffdeaa;
+}
+h1 {
+  font-size: 4em;
+}
+
+button {
+  font-family: 'Raleway', sans-serif;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 12px;
+  background-color: #ffdeaa;
+  color: #9e95a9;
+  outline: none;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: lowercase;
+}
+p {
+  font-size: 1.2em;
+}
+span {
+  color: #ffffff;
+}
