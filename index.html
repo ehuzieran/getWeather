@@ -9,17 +9,16 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   </head>
   <body onload="geoLocate()">
-    <div id="container">
-      <h1>getWeather</h1>
-      <div id="result">
+    <div id="wrapper">
+      <header>
+       <h1>getWeather</h1>
+      </header>
+      <main>
         <p>Location: <span class="city">Loading...</span></p>
-        <p>Temperature: <span class="temp">Loading...</span> </p>
+        <p>Temperature: <span class="temp">Loading...</span></p>
         <p><span class="sky"></span></p>
-        <p class="weatherImage"></p>
-        <button class="metricImp">Switch to Metric</button>
-
+        <p class="weatherImage"></p><button class="metricImp">Switch to Metric</button>
+      </main>
     </div>
-    </div>
-
   </body>
 </html>
