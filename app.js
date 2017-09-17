@@ -39,7 +39,7 @@ function displayData(data) {
   var dataSky = data.weather[0].description;
   var weatherIconID = data.weather[0].icon;
   var weatherIcon =
-    "<img src='http://openweathermap.org/img/w/" + weatherIconID + ".png'>";
+    "<img src='https://openweathermap.org/img/w/" + weatherIconID + ".png'>";
 
   var city = document.querySelector('.city');
   var temp = document.querySelector('.temp');
