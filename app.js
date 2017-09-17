@@ -13,23 +13,24 @@ function geoLocate() {
 
 function getWeather(lat, lon) {
   var url =
-    'http://api.openweathermap.org/data/2.5/weather?lat=' +
+    'https://api.openweathermap.org/data/2.5/weather?lat=' +
     lat +
     '&lon=' +
     lon +
     '&appid=700f9a155264f2308be65148a3b2d369&units=imperial';
 
-  var xhr = new XMLHttpRequest();
-  xhr.open('GET', url, true);
-
-  xhr.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      var data = JSON.parse(xhr.responseText);
-      var results = data.results;
-      displayData(data);
-    }
+  var settings = {
+    async: true,
+    crossDomain: true,
+    url: url,
+    method: 'GET',
+    headers: {},
+    data: '{}'
   };
-  xhr.send();
+
+  $.ajax(settings).done(function(data) {
+    displayData(data);
+  });
 }
 
 function displayData(data) {
@@ -74,3 +75,4 @@ function buttonClick(dataTemp, temp) {
     }
   };
 }
+
