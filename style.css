@@ -1,7 +1,3 @@
-#container {
-  text-align: center;
-  margin: 100px auto;
-}
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #94b9af;
@@ -10,7 +6,10 @@ body {
 h1 {
   font-size: 4em;
 }
-
+#wrapper {
+  text-align: center;
+  margin: 100px auto;
+}
 button {
   font-family: 'Raleway', sans-serif;
   border: none;
@@ -30,5 +29,5 @@ p {
   font-size: 1.2em;
 }
 span {
-  color: #ffffff;
+  color: #FFFFFF;
 }
